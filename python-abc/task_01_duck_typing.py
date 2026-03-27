@@ -6,47 +6,43 @@ from abc import ABC, abstractmethod
 
 class Shape(ABC):
     """Abstract class Shape"""
-
     @abstractmethod
     def area(self):
-        """Abstract method to calculate area"""
+        """Abstract method area"""
         pass
 
     @abstractmethod
     def perimeter(self):
-        """Abstract method to calculate perimeter"""
+        """Abstract method perimeter"""
         pass
 
 
 class Circle(Shape):
-    """Class Circle that inherits from Shape"""
-
+    """Circle class"""
     def __init__(self, radius):
-        """Initializes Circle with radius"""
+        """Init circle"""
         self.radius = radius
 
     def area(self):
-        """Calculates circle area: pi * r^2"""
+        """Circle area"""
         return math.pi * (self.radius ** 2)
 
     def perimeter(self):
-        """Calculates circle perimeter: 2 * pi * r"""
+        """Circle perimeter"""
         return 2 * math.pi * self.radius
 
 
 class Rectangle(Shape):
-    """Class Rectangle that inherits from Shape"""
-
+    """Rectangle class"""
     def __init__(self, width, height):
-        """Initializes Rectangle with width and height"""
+        """Init rectangle"""
         self.width = width
         self.height = height
 
     def area(self):
-        """Calculates rectangle area: w * h"""
+        """Rectangle area"""
         return self.width * self.height
 
     def perimeter(self):
-        """Calculates rectangle perimeter: 2 * (w + h)"""
+        """Rectangle perimeter"""
         return 2 * (self.width + self.height)
-
