@@ -1,19 +1,19 @@
 #!/usr/bin/python3
-"""Module for Shape, Circle and Rectangle classes"""
+"""Module for shapes"""
 import math
 from abc import ABC, abstractmethod
 
 
 class Shape(ABC):
-    """Abstract class Shape"""
+    """Shape class"""
     @abstractmethod
     def area(self):
-        """Abstract method area"""
+        """Area method"""
         pass
 
     @abstractmethod
     def perimeter(self):
-        """Abstract method perimeter"""
+        """Perimeter method"""
         pass
 
 
