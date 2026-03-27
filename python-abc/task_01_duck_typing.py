@@ -48,5 +48,5 @@ class Rectangle(Shape):
 
 def shape_info(shape):
     """Print area and perimeter of a shape using duck typing"""
-    print(f"Area: {shape.area()}")
-    print(f"Perimeter: {shape.perimeter()}")
+    print("Area: {}".format(shape.area()))
+    print("Perimeter: {}".format(shape.perimeter()))
