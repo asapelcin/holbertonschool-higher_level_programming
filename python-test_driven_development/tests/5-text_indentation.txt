@@ -26,6 +26,10 @@ TypeError: text must be a string
 >>> text_indentation("")
 >>> text_indentation("No special chars here")
 No special chars here
+>>> text_indentation()
+Traceback (most recent call last):
+    ...
+TypeError: text_indentation() missing 1 required positional argument: 'text'
 >>> text_indentation("after spaces.   next")
 after spaces.
 <BLANKLINE>
