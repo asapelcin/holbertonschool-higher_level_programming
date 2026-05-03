@@ -34,3 +34,11 @@
 >>> my_list6.append(2)
 >>> str(my_list6)
 '[3, 1, 2]'
+>>> my_list7 = MyList()
+>>> my_list7.append(3)
+>>> my_list7.append(1)
+>>> my_list7.append(2)
+>>> my_list7.print_sorted()
+[1, 2, 3]
+>>> my_list7
+[3, 1, 2]
